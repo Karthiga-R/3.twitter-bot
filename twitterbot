@@ -1,0 +1,9 @@
+import tweepy
+auth = tweepy.OAuthHandler("pGBDoAaEpkliVKBOLwjtcmHGc", "xF3glwrP5Ob6BlzEd2OU4oVfj")
+auth.set_access_token("622518493-6VcLIPprbQbv9wkcBBPvCle8vsju", "tH9AKQbQQliRdYTcLS")
+api = tweepy.API(auth)
+try:
+   api.verify_credentials()
+   print("Authentication ok")
+except:
+   print("Error during authentication")
